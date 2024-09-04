@@ -27,7 +27,7 @@ stages:
         Contents: |
           **/*.yaml
           **/*.tf
-        TargetFolder: '$(Build.ArtifactStagingDirectory)'
+        TargetFolder: 'C:\Sudarshan'
     - bash: ls -R $(Build.ArtifactStagingDirectory)
     - task: PublishBuildArtifacts@1
       inputs:
